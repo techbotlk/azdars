@@ -59,7 +59,7 @@
 
 .lineHighlight {
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
   background: linear-gradient(90deg, var(--primary), var(--primary-bright));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

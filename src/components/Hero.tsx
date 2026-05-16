@@ -24,11 +24,22 @@ export default function Hero() {
             <span>Award Winning Digital Studio</span>
           </motion.div>
 
-          <h1 className={styles.title}>
-            <span className={styles.line}>CRAFTING THE</span>
-            <span className={styles.lineHighlight}>FUTURE OF DIGITAL</span>
-            <span className={styles.line}>EXPERIENCES</span>
-          </h1>
+          <motion.h1 
+            className={styles.title}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.15, delayChildren: 0.1 }
+              }
+            }}
+          >
+            <motion.span variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } }} className={styles.line}>CRAFTING THE</motion.span>
+            <motion.span variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } }} className={styles.lineHighlight}>FUTURE OF DIGITAL</motion.span>
+            <motion.span variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } }} className={styles.line}>EXPERIENCES</motion.span>
+          </motion.h1>
           
           <p className={styles.description}>
             Azdars combines unparalleled creative vision with world-class engineering. 
