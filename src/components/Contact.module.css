@@ -1,0 +1,185 @@
+.contact {
+  background: var(--black);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+.outlineText {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 8rem;
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.method:hover {
+  transform: translateX(10px);
+}
+
+.mIcon {
+  width: 60px;
+  height: 60px;
+  background: rgba(33, 109, 207, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.mText {
+  display: flex;
+  flex-direction: column;
+}
+
+.mText span {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.mText strong {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.socialFollow p {
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+.socialIcons a {
+  color: white;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  opacity: 1;
+  color: var(--primary);
+  transform: translateY(-5px);
+}
+
+.formContainer {
+  background: var(--black-100);
+  padding: 5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+  color: white;
+  font-family: inherit;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup select option {
+  color: black;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.submitBtn {
+  margin-top: 2rem;
+  background: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: var(--primary-bright);
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px var(--primary-glow);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+  .formContainer {
+    padding: 3rem;
+  }
+}
