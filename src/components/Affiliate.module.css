@@ -18,7 +18,7 @@
 
 .outlineText {
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
 }
 
 .description {
@@ -136,6 +136,37 @@
 @media (max-width: 992px) {
   .wrapper {
     grid-template-columns: 1fr;
-    padding: 3rem;
+    padding: 4rem 3rem;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 2rem 1.5rem;
+    gap: 3rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .benefits {
+    gap: 1.5rem;
+  }
+
+  .benefit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dashboardCard {
+    padding: 2rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

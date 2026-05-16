@@ -23,3 +23,9 @@
   z-index: 9999;
   transition: transform 0.1s ease-out;
 }
+
+@media (max-width: 992px) {
+  .cursor, .follower {
+    display: none !important;
+  }
+}

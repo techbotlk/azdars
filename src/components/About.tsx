@@ -11,8 +11,8 @@ export default function About() {
     offset: ["start end", "end start"]
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 0.5], [-150, 0]);
-  const x2 = useTransform(scrollYProgress, [0, 0.5], [150, 0]);
+  const x1 = useTransform(scrollYProgress, [0, 0.3], [-150, 0]);
+  const x2 = useTransform(scrollYProgress, [0, 0.3], [150, 0]);
 
   return (
     <section id="about" ref={containerRef} className={`${styles.about} section`}>
